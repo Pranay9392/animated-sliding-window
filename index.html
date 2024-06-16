@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Longest Ones Visualizer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Longest Subarray of 1s with at most k Flips Visualizer</h2>
+    <div class="input-container">
+      <label for="nums">Array of 0s and 1s:</label>
+      <input type="text" id="nums" placeholder="Enter array e.g., 1,0,1,1,0">
+      <label for="k">k:</label>
+      <input type="number" id="k" min="0" value="1">
+      <button onclick="visualize()">Visualize</button>
+    </div>
+    <div class="output-container">
+      <p>Longest length of subarray of 1s: <span id="result">-</span></p>
+      <div class="visualization" id="visualization"></div>
+      <div class="animation-info">
+        <p><span class="info-zero">Zero count: </span><span id="zeroCount">-</span></p>
+        <p><span class="info-left">Left pointer: </span><span id="left">-</span></p>
+        <p><span class="info-right">Right pointer: </span><span id="right">-</span></p>
+        <p><span class="info-maxLen">Max length: </span><span id="maxLen">-</span></p>
+      </div>
+      <div class="controls">
+        <button onclick="stopAnimation()" id="stopBtn" disabled>Stop</button>
+        <button onclick="playAnimation()" id="playBtn">Play</button>
+        <button onclick="continueAnimation()" id="continueBtn">Continue</button>
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

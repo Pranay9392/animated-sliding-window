@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label, .input-container input, .input-container button {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.output-container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.visualization {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.visualization span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 2px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #dee2e6;
+  transition: all 0.3s ease-in-out;
+}
+
+.visualization .number {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.visualization .current {
+  background-color: #ffc107;
+}
+
+.visualization .zero {
+  background-color: #dc3545;
+}
+
+.animation-info {
+  width: 300px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.animation-info p {
+  margin: 8px 0;
+}
+
+.info-zero, .info-left, .info-right, .info-maxLen {
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  margin: 0 10px;
+}
